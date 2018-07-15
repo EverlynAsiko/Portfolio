@@ -1,0 +1,86 @@
+/*change colors for the body and divs*/
+body {
+	display: grid;
+	background-color: #fff;
+	grid-template-columns: 20% 80%;
+}
+
+img {
+	border-radius: 4px;
+}
+
+#boxHeader {
+  	background-color: #fff;
+  	padding-left: 20%;
+  	padding-right: 2em;
+  	color: #000;
+  	display: flex;
+
+  	grid-column-start: 1; 
+  	grid-column-end: 3;
+  	grid-row-start: 1; 
+  	grid-row-end: 3;
+}
+
+#boxContent {
+  	border-radius: 5px;
+  	background-color: #fff;
+  	padding: 1em;
+  	color: #000;
+}
+
+#boxAside {
+  background-color: #fff;
+  padding: 1em;
+  color: #000;
+  text-align: right;
+
+  grid-column-start: 1;  
+  grid-row-start: 3; 
+  grid-row-end: 5;
+}
+
+#boxFooter {
+  	border-radius: 5px;
+  	background-color: #fff;
+  	padding: 1em;
+  	color: #000;
+
+    bottom: 0;
+    text-align: center;
+}
+
+#myWork {
+	display: flex;
+}
+
+#myWork1 {
+	display: flex;
+	width: 33.3%;
+	flex-wrap: wrap;
+	order: 1;
+}
+
+#myWork2 {
+	display: flex;
+	width: 33.3%;
+	flex-wrap: wrap;
+	order: 2;
+}
+#myWork3 {
+	display: flex;
+	width: 33.3%;
+	flex-wrap: wrap;
+	order: 3;
+}
+
+#logo {
+	order: 1;
+	width: 50%;
+}
+
+#myInfo {
+	text-align: right;
+	order: 2;	
+	width: 50%;
+}
