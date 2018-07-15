@@ -1,12 +1,17 @@
-/*change colors for the body and divs*/
+/*Layout defined:Use of grid*/
 body {
 	display: grid;
 	background-color: #fff;
 	grid-template-columns: 20% 80%;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
 	border-radius: 4px;
+}
+
+p, h2{
+	color: #39ff14;
 }
 
 #boxHeader {
@@ -16,6 +21,8 @@ img {
   	color: #000;
   	display: flex;
 
+  	/*Setting the header to appear first
+  	Help from developer.mozilla.org*/
   	grid-column-start: 1; 
   	grid-column-end: 3;
   	grid-row-start: 1; 
@@ -35,6 +42,8 @@ img {
   color: #000;
   text-align: right;
 
+  /*Setting the box to appear on the side
+  Help from developer.mozilla.org*/
   grid-column-start: 1;  
   grid-row-start: 3; 
   grid-row-end: 5;
@@ -85,9 +94,11 @@ img {
 	width: 50%;
 }
 
+/*added responsiveness*/
 @media screen and (max-width: 425px){
 	body{
 		display: block;
+		font-size: 1em;
 	}
 	#boxHeader {
 		padding: 1em;
